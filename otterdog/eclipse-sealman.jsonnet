@@ -25,15 +25,9 @@ orgs.newOrg('technology.sealman', 'eclipse-sealman') {
         default_workflow_permissions: "write",
       },
     },
-  ],
-} + {
   # snippet added due to 'https://github.com/EclipseFdn/otterdog-configs/blob/main/blueprints/add-dot-github-repo.yml'
-  _repositories+:: [
-    orgs.newRepo('.github')
-  ],
-} + {
+    orgs.newRepo('.github') {},
   # Adding Repository for initial commit
-  _repositories+:: [
     orgs.newRepo('starterpackage'){
       allow_merge_commit: true,
       allow_update_branch: false,
@@ -46,10 +40,6 @@ orgs.newOrg('technology.sealman', 'eclipse-sealman') {
         default_workflow_permissions: "write",
       },
     },
-  ],
-}
- + {
-  _repositories+:: [
     orgs.newRepo('code-playground') {
       description: 'Playground repository for Welotec application (daemon + CLI). Eclipse-hosted; ECA + Signed-off-by required.',
       homepage: '',
@@ -61,7 +51,6 @@ orgs.newOrg('technology.sealman', 'eclipse-sealman') {
       has_projects: false,
       has_wiki: false,
       has_discussions: true,
-      is_template: false,
 
       web_commit_signoff_required: true,
       secret_scanning: "enabled",
@@ -85,9 +74,6 @@ orgs.newOrg('technology.sealman', 'eclipse-sealman') {
         },
       ],
     },
-  ],
-} + {
-  _repositories+:: [
     orgs.newRepo('sealman-ems'){
       description: "SEALMAN Element Management System (EMS)",
 
@@ -107,9 +93,6 @@ orgs.newOrg('technology.sealman', 'eclipse-sealman') {
       dependabot_alerts_enabled: false,
       dependabot_security_updates_enabled: false,
     },
-  ],
-} + {
-  _repositories+:: [
     orgs.newRepo('sealman-os-base') {
       description: 'Sealman Operating System base',
       homepage: '',
@@ -121,7 +104,6 @@ orgs.newOrg('technology.sealman', 'eclipse-sealman') {
       has_projects: false,
       has_wiki: false,
       has_discussions: true,
-      is_template: false,
 
       web_commit_signoff_required: true,
       secret_scanning: "enabled",
@@ -145,9 +127,6 @@ orgs.newOrg('technology.sealman', 'eclipse-sealman') {
         },
       ],
     },
-  ],
-} + {
-  _repositories+:: [
     orgs.newRepo('sealman-os-conman') {
       description: 'Sealman Operating System configuration Management soulution',
       homepage: '',
@@ -159,7 +138,6 @@ orgs.newOrg('technology.sealman', 'eclipse-sealman') {
       has_projects: false,
       has_wiki: false,
       has_discussions: true,
-      is_template: false,
 
       web_commit_signoff_required: true,
       secret_scanning: "enabled",
@@ -183,9 +161,6 @@ orgs.newOrg('technology.sealman', 'eclipse-sealman') {
         },
       ],
     },
-  ],
-} + {
-  _repositories+:: [
     orgs.newRepo('sealman-edge-config-api') {
       description: 'Sealman EdgeConfig-API',
       homepage: '',
@@ -194,7 +169,6 @@ orgs.newOrg('technology.sealman', 'eclipse-sealman') {
       has_projects: false,
       has_wiki: false,
       has_discussions: true,
-      is_template: false,
 
       branch_protection_rules: [
         {
@@ -210,9 +184,6 @@ orgs.newOrg('technology.sealman', 'eclipse-sealman') {
         },
       ],
     },
-  ],
-} + {
-  _repositories+:: [
     orgs.newRepo('sealman-edge-config-app') {
       description: 'Sealman EdgeConfig-APP',
       homepage: '',
@@ -221,7 +192,6 @@ orgs.newOrg('technology.sealman', 'eclipse-sealman') {
       has_projects: false,
       has_wiki: false,
       has_discussions: true,
-      is_template: false,
 
       branch_protection_rules: [
         {
@@ -237,9 +207,6 @@ orgs.newOrg('technology.sealman', 'eclipse-sealman') {
         },
       ],
     },
-  ],
-} + {
-  _repositories+:: [
     orgs.newRepo('sealman-edge-config-asset') {
       description: 'Sealman Asset-API',
       homepage: '',
@@ -248,7 +215,6 @@ orgs.newOrg('technology.sealman', 'eclipse-sealman') {
       has_projects: false,
       has_wiki: false,
       has_discussions: true,
-      is_template: false,
 
       branch_protection_rules: [
         {
@@ -264,9 +230,6 @@ orgs.newOrg('technology.sealman', 'eclipse-sealman') {
         },
       ],
     },
-  ],
-} + {
-  _repositories+:: [
     orgs.newRepo('sealman-iiot-platform') {
       description: 'Sealman IIOT Platform',
       homepage: '',
