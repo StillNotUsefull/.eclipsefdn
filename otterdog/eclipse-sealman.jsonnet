@@ -189,23 +189,12 @@ orgs.newOrg('technology.sealman', 'eclipse-sealman') {
     orgs.newRepo('sealman-edge-config-api') {
       description: 'Sealman EdgeConfig-API',
       homepage: '',
-      allow_merge_commit: false,
-      allow_rebase_merge: true,
-      allow_squash_merge: true,
-      delete_branch_on_merge: true,
+
       has_issues: true,
       has_projects: false,
       has_wiki: false,
       has_discussions: true,
       is_template: false,
-
-      web_commit_signoff_required: true,
-      secret_scanning: "enabled",
-      secret_scanning_push_protection: "enabled",
-
-      workflows+: {
-        enabled: true
-      },
 
       branch_protection_rules: [
         {
@@ -227,23 +216,12 @@ orgs.newOrg('technology.sealman', 'eclipse-sealman') {
     orgs.newRepo('sealman-edge-config-app') {
       description: 'Sealman EdgeConfig-APP',
       homepage: '',
-      allow_merge_commit: false,
-      allow_rebase_merge: true,
-      allow_squash_merge: true,
-      delete_branch_on_merge: true,
+
       has_issues: true,
       has_projects: false,
       has_wiki: false,
       has_discussions: true,
       is_template: false,
-
-      web_commit_signoff_required: true,
-      secret_scanning: "enabled",
-      secret_scanning_push_protection: "enabled",
-
-      workflows+: {
-        enabled: true
-      },
 
       branch_protection_rules: [
         {
@@ -265,23 +243,12 @@ orgs.newOrg('technology.sealman', 'eclipse-sealman') {
     orgs.newRepo('sealman-edge-config-asset') {
       description: 'Sealman Asset-API',
       homepage: '',
-      allow_merge_commit: false,
-      allow_rebase_merge: true,
-      allow_squash_merge: true,
-      delete_branch_on_merge: true,
+
       has_issues: true,
       has_projects: false,
       has_wiki: false,
       has_discussions: true,
       is_template: false,
-
-      web_commit_signoff_required: true,
-      secret_scanning: "enabled",
-      secret_scanning_push_protection: "enabled",
-
-      workflows+: {
-        enabled: true
-      },
 
       branch_protection_rules: [
         {
@@ -303,23 +270,11 @@ orgs.newOrg('technology.sealman', 'eclipse-sealman') {
     orgs.newRepo('sealman-iiot-platform') {
       description: 'Sealman IIOT Platform',
       homepage: '',
-      allow_merge_commit: false,
-      allow_rebase_merge: true,
-      allow_squash_merge: true,
-      delete_branch_on_merge: true,
+
       has_issues: true,
       has_projects: false,
       has_wiki: false,
       has_discussions: true,
-      is_template: false,
-
-      web_commit_signoff_required: true,
-      secret_scanning: "enabled",
-      secret_scanning_push_protection: "enabled",
-
-      workflows+: {
-        enabled: true
-      },
 
       branch_protection_rules: [
         {
