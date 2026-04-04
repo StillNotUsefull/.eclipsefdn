@@ -207,29 +207,6 @@ orgs.newOrg('technology.sealman', 'eclipse-sealman') {
         },
       ],
     },
-    orgs.newRepo('sealman-edge-config-asset') {
-      description: 'Sealman Asset-API',
-      homepage: '',
-
-      has_issues: true,
-      has_projects: false,
-      has_wiki: false,
-      has_discussions: true,
-
-      branch_protection_rules: [
-        {
-          pattern: "main",
-          allows_deletions: false,
-          allows_force_pushes: false,
-          blocks_creations: false,
-          requires_pull_request: true,
-          required_approving_review_count: 1,
-          requires_code_owner_reviews: true,
-          requires_linear_history: true,
-          is_admin_enforced: true,
-        },
-      ],
-    },
     orgs.newRepo('sealman-iiot-platform') {
       description: 'Sealman IIOT Platform',
       homepage: '',
