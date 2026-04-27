@@ -230,5 +230,97 @@ orgs.newOrg('technology.sealman', 'eclipse-sealman') {
         },
       ],
     },
+    orgs.newRepo('sealman-app-cmd-proxy') {
+      description: 'Sealman App Command Proxy',
+      homepage: '',
+
+      has_issues: true,
+      has_projects: false,
+      has_wiki: false,
+      has_discussions: true,
+
+      branch_protection_rules: [
+        {
+          pattern: "main",
+          allows_deletions: false,
+          allows_force_pushes: false,
+          blocks_creations: false,
+          requires_pull_request: true,
+          required_approving_review_count: 1,
+          requires_code_owner_reviews: true,
+          requires_linear_history: true,
+          is_admin_enforced: true,
+        },
+      ],
+    },
+    orgs.newRepo('sealman-app-opcua-client') {
+      description: 'Sealman App OPC UA Client',
+      homepage: '',
+
+      has_issues: true,
+      has_projects: false,
+      has_wiki: false,
+      has_discussions: true,
+
+      branch_protection_rules: [
+        {
+          pattern: "main",
+          allows_deletions: false,
+          allows_force_pushes: false,
+          blocks_creations: false,
+          requires_pull_request: true,
+          required_approving_review_count: 1,
+          requires_code_owner_reviews: true,
+          requires_linear_history: true,
+          is_admin_enforced: true,
+        },
+      ],
+    },
+    orgs.newRepo('sealman-app-net-discover') {
+      description: 'Sealman App Network Discover',
+      homepage: '',
+
+      has_issues: true,
+      has_projects: false,
+      has_wiki: false,
+      has_discussions: true,
+
+      branch_protection_rules: [
+        {
+          pattern: "main",
+          allows_deletions: false,
+          allows_force_pushes: false,
+          blocks_creations: false,
+          requires_pull_request: true,
+          required_approving_review_count: 1,
+          requires_code_owner_reviews: true,
+          requires_linear_history: true,
+          is_admin_enforced: true,
+        },
+      ],
+    },
+    orgs.newRepo('sealman-app-mqtt') {
+      description: 'Sealman App Mqtt',
+      homepage: '',
+
+      has_issues: true,
+      has_projects: false,
+      has_wiki: false,
+      has_discussions: true,
+
+      branch_protection_rules: [
+        {
+          pattern: "main",
+          allows_deletions: false,
+          allows_force_pushes: false,
+          blocks_creations: false,
+          requires_pull_request: true,
+          required_approving_review_count: 1,
+          requires_code_owner_reviews: true,
+          requires_linear_history: true,
+          is_admin_enforced: true,
+        },
+      ],
+    },
   ],
 }
